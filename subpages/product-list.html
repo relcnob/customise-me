@@ -1,17 +1,81 @@
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,nofollow" />
     <title>CustomiseMe - Products</title>
-    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="../style/main.css" />
     <link rel="icon" type="image/x-icon" href="img/icons/favicon.svg" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <a href="index.html" class="logo"
+        ><img
+          src="../assets/icons/customiseme-logo-white.svg"
+          alt="CustomiseMe logo"
+      /></a>
+      <nav>
+        <img
+          src="../assets/icons/menu_white_24dp.svg"
+          class="menu-icon"
+          alt=""
+        />
+        <ul id="menu">
+          <li><a href="product-list.html">Store</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li>
+            <a href="customise-soap.html">Customise your own!</a>
+          </li>
+          <li>
+            <label>About</label>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="ingredients.html">Ingredients</a></li>
+              <li><a href="aromatherapy.html">Aromatherapy</a></li>
+              <li>
+                <a href="sustainability.html">Sustainability</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <ul>
+            <li id="account-icon">
+              <label>Account</label>
+              <ul>
+                <li><a href="account-login.html">Login</a></li>
+                <li><a href="account-register.html">Register</a></li>
+                <li>
+                  <a href="account-account-details.html">Account details</a>
+                </li>
+                <li>
+                  <a href="account-track-order.html">Order tracking</a>
+                </li>
+              </ul>
+            </li>
+            <li id="favourites-icon">
+              <a href="favourites.html">Favourites</a>
+            </li>
+            <li id="cart-icon"><a href="cart.html">Cart</a></li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
 
-    <main></main>
+    <main>
+      <h2>Store</h2>
+      <section class="product-list">
+        <div class="product-card">
+          <img src="../assets/temporary-images/test-soap.webp" alt="" />
+          <h3>Calming Soap</h3>
+          <div class="product-card-price">DKK 55,00</div>
+          <button onclick="">Add to Cart</button>
+        </div>
+      </section>
+    </main>
+
     <footer></footer>
+    <script src="../scripts/subpages-menu.js"></script>
   </body>
 </html>
