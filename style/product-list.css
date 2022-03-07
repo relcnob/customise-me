@@ -1,0 +1,52 @@
+:root {
+  --bodyFont: "Open Sans", sans-serif;
+  --headerFont: "Fredoka", sans-serif;
+  --mainColor: #a3e7c5;
+  --subColor: #bfac99;
+  --black: #282828;
+  --gray: #ebeaeb;
+  --bgColor: #fff;
+  --globalPadding: 1rem;
+  --buttonActive: #96c7b9;
+}
+
+.product-list {
+  margin: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+.product-card-price {
+  font-size: 0.8rem;
+}
+
+.product-card button {
+  background-color: var(--mainColor);
+  color: var(--bgColor);
+  border: 2px solid var(--mainColor);
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 0.5rem 1.4rem;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.product-card button:hover {
+  background-color: var(--bgColor);
+  color: var(--mainColor);
+}
+
+.product-card button:active {
+  background-color: var(--bgColor);
+  color: var(--buttonActive);
+  border-color: var(--buttonActive);
+}
