@@ -46,6 +46,8 @@ h4 {
   font-family: var(--headerFont);
   color: var(--black);
   margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 a {
