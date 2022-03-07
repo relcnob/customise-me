@@ -89,6 +89,8 @@ header {
   background-color: #fff;
   height: 100vh;
   transition: all 0.6s ease;
+  font-family: var(--headerFont);
+  font-weight: 500;
 }
 .menu-icon {
   aspect-ratio: 1/1;
@@ -108,9 +110,127 @@ header {
   transform: rotate(180deg);
 }
 
+nav label {
+  display: none;
+}
+
+nav ul {
+  align-items: center;
+  text-align: center;
+}
+
+nav li {
+  margin-bottom: 0.4rem;
+}
+
+nav li a {
+  color: var(--black);
+  font-size: 1.5rem;
+}
 /* class styling */
 
 .logo {
   height: 80px;
   width: 80px;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  ul li {
+    padding: 1rem;
+  }
+
+  #menu {
+    position: initial;
+    flex-direction: row;
+    transform: translateX(0%);
+    background: none;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  #menu label {
+    display: initial;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+  .dropdown ul {
+    margin-top: 1rem;
+    position: absolute;
+    left: calc(-40% + 0.5rem);
+    background-color: var(--mainColor);
+    border-bottom: solid 3px #fff;
+    transition: transform 0.5s cubic-bezier(0.58, 0.14, 0.51, 1.31),
+      opacity 0.3s ease-in-out;
+    transform-origin: top;
+    opacity: 1;
+    z-index: 20;
+  }
+
+  .dropdown ul:after {
+    position: absolute;
+    left: -3px;
+    top: 0;
+    width: calc(100% + 6px);
+    height: calc(100% + 3px);
+    content: "";
+    display: block;
+    z-index: -1;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 5%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  label.collapsed + ul {
+    display: block;
+    transform: scaleY(0);
+    opacity: 0;
+  }
+
+  .dropdown ul li {
+    display: block;
+    background-color: var(--mainColor);
+  }
+
+  .dropdown ul li a {
+    font-size: 1.25rem;
+    display: block;
+  }
+
+  #menu a {
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .header-ico {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .header-ico img {
+    height: 32px;
+  }
 }
