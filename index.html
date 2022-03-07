@@ -23,8 +23,8 @@
           <li>
             <a href="subpages/customise-soap.html">Customise your own!</a>
           </li>
-          <li>
-            <label>About</label>
+          <li class="dropdown">
+            <label id="about" class="collapsed">About</label>
             <ul>
               <li><a href="subpages/about.html">About us</a></li>
               <li><a href="subpages/faq.html">FAQ</a></li>
@@ -36,9 +36,11 @@
             </ul>
           </li>
           <li><a href="subpages/contact.html">Contact</a></li>
-          <ul>
-            <li id="account-icon">
-              <label>Account</label>
+          <ul class="header-ico">
+            <li class="dropdown">
+              <label id="account" class="collapsed"
+                ><img src="assets/icons/account_circle_white_24dp.svg"
+              /></label>
               <ul>
                 <li><a href="subpages/account-login.html">Login</a></li>
                 <li><a href="subpages/account-register.html">Register</a></li>
@@ -53,9 +55,15 @@
               </ul>
             </li>
             <li id="favourites-icon">
-              <a href="subpages/favourites.html">Favourites</a>
+              <a href="subpages/favourites.html"
+                ><img src="assets/icons/favorite_white_24dp.svg"
+              /></a>
             </li>
-            <li id="cart-icon"><a href="subpages/cart.html">Cart</a></li>
+            <li id="cart-icon">
+              <a href="subpages/cart.html"
+                ><img src="assets/icons/shopping_cart_white_24dp.svg"
+              /></a>
+            </li>
           </ul>
         </ul>
       </nav>

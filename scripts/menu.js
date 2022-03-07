@@ -1,5 +1,8 @@
 let icon = "hamburger";
+
 document.querySelector(".menu-icon").addEventListener("click", showMenu);
+document.querySelector("#about").addEventListener("click", collapseDropdown);
+document.querySelector("#account").addEventListener("click", collapseDropdown);
 
 function showMenu() {
   document.querySelector("nav").classList.toggle("showMenu");
@@ -11,4 +14,8 @@ function showMenu() {
     icon = "hamburger";
     document.querySelector("nav img").src = "assets/icons/menu_white_24dp.svg";
   }
+}
+
+function collapseDropdown() {
+  this.classList.toggle("collapsed");
 }
