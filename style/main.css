@@ -58,6 +58,7 @@ a {
 li {
   list-style: none;
 }
+
 img {
   max-width: 100%;
   display: block;
@@ -140,6 +141,7 @@ nav li a {
   }
   nav {
     width: 100%;
+    margin-top: 0.5rem;
   }
 
   nav li {
@@ -149,7 +151,6 @@ nav li a {
   ul li {
     padding: 1rem;
   }
-
   #menu {
     position: initial;
     flex-direction: row;
@@ -164,6 +165,37 @@ nav li a {
     display: initial;
     font-size: 1.5rem;
     cursor: pointer;
+  }
+
+  #menu a {
+    transition: 0.3s ease-in-out;
+  }
+
+  #menu a:hover {
+    opacity: 0.5;
+  }
+
+  #about:after {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    content: "";
+    margin-left: 0.4rem;
+    background-image: url(/assets/icons/expand_more_white_24dp.svg);
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+    transition: 0.3s ease;
+  }
+
+  #about.collapsed:after {
+    transform: rotate(360deg);
+  }
+  #about {
+    transition: 0.3s ease-in-out;
+  }
+  #about:hover {
+    opacity: 0.5;
   }
 
   .dropdown {
@@ -199,6 +231,10 @@ nav li a {
     );
   }
 
+  #about + ul {
+    left: -25%;
+  }
+
   label.collapsed + ul {
     display: block;
     transform: scaleY(0);
@@ -217,6 +253,8 @@ nav li a {
 
   #menu a {
     color: #fff;
+    display: block;
+    width: 100%;
   }
 
   .menu-icon {
@@ -232,5 +270,9 @@ nav li a {
   }
   .header-ico img {
     height: 32px;
+    transition: 0.3s ease-in-out;
+  }
+  .header-ico img:hover {
+    opacity: 0.5;
   }
 }
