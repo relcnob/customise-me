@@ -11,25 +11,21 @@
   </head>
   <body>
     <header>
-      <a href="../index.html" class="logo"
+      <a href="../scripts/" class="logo"
         ><img
           src="../assets/icons/customiseme-logo-white.svg"
           alt="CustomiseMe logo"
       /></a>
       <nav>
-        <img
-          src="../assets/icons/menu_white_24dp.svg"
-          class="menu-icon"
-          alt=""
-        />
+        <img src="../assets/icons/menu_white_24dp.svg" class="menu-icon" />
         <ul id="menu">
           <li><a href="product-list.html">Store</a></li>
           <li><a href="workshop.html">Workshop</a></li>
           <li>
             <a href="customise-soap.html">Customise your own!</a>
           </li>
-          <li>
-            <label>About</label>
+          <li class="dropdown">
+            <label id="about" class="collapsed">About</label>
             <ul>
               <li><a href="about.html">About us</a></li>
               <li><a href="faq.html">FAQ</a></li>
@@ -41,9 +37,11 @@
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
-          <ul>
-            <li id="account-icon">
-              <label>Account</label>
+          <ul class="header-ico">
+            <li class="dropdown">
+              <label id="account" class="collapsed"
+                ><img src="../assets/icons/account_circle_white_24dp.svg"
+              /></label>
               <ul>
                 <li><a href="account-login.html">Login</a></li>
                 <li><a href="account-register.html">Register</a></li>
@@ -56,9 +54,19 @@
               </ul>
             </li>
             <li id="favourites-icon">
-              <a href="favourites.html">Favourites</a>
+              <a href="subpages/favourites.html"
+                ><img src="../assets/icons/favorite_white_24dp.svg" /><span
+                  >Favourites</span
+                ></a
+              >
             </li>
-            <li id="cart-icon"><a href="cart.html">Cart</a></li>
+            <li id="cart-icon">
+              <a href="subpages/cart.html"
+                ><img src="../assets/icons/shopping_cart_white_24dp.svg" /><span
+                  >Cart</span
+                ></a
+              >
+            </li>
           </ul>
         </ul>
       </nav>
