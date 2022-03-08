@@ -9,8 +9,8 @@
 :root {
   --bodyFont: "Open Sans", sans-serif;
   --headerFont: "Fredoka", sans-serif;
-  --mainColor: #a3e7c5;
-  --subColor: #bfac99;
+  --mainColor: #bdd8c0;
+  --subColor: #9dc5a1;
   --black: #282828;
   --gray: #ebeaeb;
   --bgColor: #fff;
@@ -74,6 +74,49 @@ header {
   padding: 1rem var(--globalPadding);
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #fff;
+  background: var(--mainColor);
+  padding: var(--globalPadding);
+}
+main {
+  padding: var(--globalPadding);
+}
+
+footer h2 {
+  color: #fff;
+}
+
+footer nav ul {
+  width: auto;
+  text-align: left;
+}
+
+footer nav ul li {
+  padding: 0.1rem;
+  padding-left: 0;
+}
+
+footer nav {
+  margin: 0.5rem 0;
+}
+
+footer section {
+  margin: 0.5rem 0;
+}
+
+footer nav ul li a {
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+footer nav ul li a:hover {
+  opacity: 0.5;
+}
+
 /* menu styling */
 
 #menu {
@@ -121,13 +164,22 @@ nav ul {
 }
 
 nav li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
 }
 
 nav li a {
   color: var(--black);
   font-size: 1.5rem;
 }
+
+.header-ico li img {
+  display: none;
+}
+
+.dropdown {
+  margin-bottom: 0;
+}
+
 /* class styling */
 
 .logo {
@@ -135,9 +187,15 @@ nav li a {
   width: 80px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+  :root {
+    --globalPadding: 4rem;
+  }
   header {
     flex-direction: column;
+  }
+  footer {
+    grid-template-columns: repeat(4, 1fr);
   }
   nav {
     width: 100%;
@@ -173,6 +231,13 @@ nav li a {
 
   #menu a:hover {
     opacity: 0.5;
+  }
+  .header-ico li img {
+    display: initial;
+  }
+
+  .header-ico li span {
+    display: none;
   }
 
   #about:after {
