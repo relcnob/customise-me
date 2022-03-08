@@ -9,8 +9,8 @@
 :root {
   --bodyFont: "Open Sans", sans-serif;
   --headerFont: "Fredoka", sans-serif;
-  --mainColor: #a3e7c5;
-  --subColor: #bfac99;
+  --mainColor: #bdd8c0;
+  --subColor: #9dc5a1;
   --black: #282828;
   --gray: #ebeaeb;
   --bgColor: #fff;
@@ -78,7 +78,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   color: #fff;
-  background: var(--subColor);
+  background: var(--mainColor);
   padding: var(--globalPadding);
 }
 main {
@@ -164,13 +164,22 @@ nav ul {
 }
 
 nav li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
 }
 
 nav li a {
   color: var(--black);
   font-size: 1.5rem;
 }
+
+.header-ico li img {
+  display: none;
+}
+
+.dropdown {
+  margin-bottom: 0;
+}
+
 /* class styling */
 
 .logo {
@@ -179,6 +188,9 @@ nav li a {
 }
 
 @media screen and (min-width: 768px) {
+  :root {
+    --globalPadding: 4rem;
+  }
   header {
     flex-direction: column;
   }
@@ -219,6 +231,13 @@ nav li a {
 
   #menu a:hover {
     opacity: 0.5;
+  }
+  .header-ico li img {
+    display: initial;
+  }
+
+  .header-ico li span {
+    display: none;
   }
 
   #about:after {
