@@ -37,7 +37,7 @@ body {
   font-family: var(--bodyFont);
   background-color: var(--bgColor);
   color: var(--black);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1,

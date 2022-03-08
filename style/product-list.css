@@ -1,13 +1,12 @@
 :root {
   --bodyFont: "Open Sans", sans-serif;
   --headerFont: "Fredoka", sans-serif;
-  --mainColor: #a3e7c5;
-  --subColor: #bfac99;
+  --mainColor: #bdd8c0;
+  --subColor: #9dc5a1;
   --black: #282828;
   --gray: #ebeaeb;
   --bgColor: #fff;
   --globalPadding: 1rem;
-  --buttonActive: #96c7b9;
 }
 
 .product-list-header {
@@ -38,10 +37,9 @@
 }
 
 .product-list {
-  margin: 0.6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+  gap: 1rem;
 }
 
 .product-card {
@@ -106,6 +104,12 @@
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .product-list h3 {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (min-width: 450px) {
