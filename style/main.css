@@ -10,9 +10,10 @@
   --bodyFont: "Open Sans", sans-serif;
   --headerFont: "Fredoka", sans-serif;
   --mainColor: #bdd8c0;
-  --subColor: #9dc5a1;
+  --subColor: #aa8b7a;
   --black: #282828;
   --gray: #ebeaeb;
+  --lightGray: #f7f7f7;
   --bgColor: #fff;
   --globalPadding: 1rem;
 }
@@ -72,6 +73,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem var(--globalPadding);
+  z-index: 10;
 }
 
 footer {
@@ -193,9 +195,281 @@ nav li a {
   width: 80px;
 }
 
+/* index styling */
+
+.index-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: var(--globalPadding);
+}
+
+.index-hero div:first-of-type {
+  grid-column: 1 / -1;
+  aspect-ratio: 15 / 9;
+  background-image: url(../assets/img/placeholder-soap.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.index-hero div:nth-child(2) {
+  background-image: url(../assets/img/soap-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.index-hero div:nth-child(3) {
+  background-image: url(../assets/img/soap-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.index-hero div {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  justify-content: center;
+  width: 100%;
+  min-height: 10rem;
+}
+
+.index-hero div a {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  top: 0rem;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background: rgba(189, 216, 192, 0.6);
+
+  background: rgb(189, 216, 192);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(189, 216, 192, 0.9) 5%,
+    rgba(189, 216, 192, 0) 85%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(189, 216, 192, 0.9) 5%,
+    rgba(189, 216, 192, 0) 85%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(189, 216, 192, 0.9) 5%,
+    rgba(189, 216, 192, 0) 85%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdd8c0",endColorstr="#bdd8c0",GradientType=1);
+  z-index: 2;
+}
+
+.index-hero div a h2 {
+  color: #fff;
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+  transition: letter-spacing 0.3s ease-in-out, transform 0.3s ease,
+    text-shadow 0.3s ease-in-out;
+  text-shadow: 0px 0 var(--subColor);
+}
+.index-hero div a:hover h2 {
+  letter-spacing: 4px;
+  transform: translateX(6px);
+  text-shadow: -4px 0px var(--subColor);
+}
+
+.index-hero div a p {
+  color: #fff;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.index-general-info {
+  padding: var(--globalPadding);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: var(--lightGray);
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  height: 100%;
+  margin: 1.5rem 0;
+}
+
+.info-card h2 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-card p {
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.info-card img {
+  aspect-ratio: 1/1;
+  width: 64px;
+  margin-bottom: 0.5rem;
+}
+
+.main-heading {
+  position: relative;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 10px;
+}
+
+.main-heading + p {
+  max-width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.index-products {
+  padding: var(--globalPadding) 0;
+}
+
+.main-heading:before {
+  content: "";
+  width: 4rem;
+  height: 5px;
+  border-radius: 3rem;
+  display: block;
+  position: absolute;
+  background-color: var(--mainColor);
+  top: -10px;
+}
+
+.index-products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.product-card-mockup {
+  width: 100%;
+  padding: 3rem;
+  height: 200px;
+  background-color: #ccc;
+  border-radius: 1.5rem;
+}
+
+.index-how-to {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.index-how-to img {
+  aspect-ratio: 1/1;
+  width: 100px;
+  margin-bottom: 30px;
+}
+.index-how-to div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.index-how-to div:after {
+  content: "";
+  height: 4px;
+  width: calc(100% + 1rem);
+  position: absolute;
+  background: var(--gray);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(235, 234, 235, 1) 0%,
+    var(--gray) 50%,
+    rgba(235, 234, 235, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(235, 234, 235, 1) 0%,
+    var(--gray) 50%,
+    rgba(235, 234, 235, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(235, 234, 235, 1) 0%,
+    var(--gray) 50%,
+    rgba(235, 234, 235, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebeaeb",endColorstr="#ebeaeb",GradientType=1);
+  top: 110px;
+  transition: background 0.3s ease-in-out 1s;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+}
+
+.index-how-to div:before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  background-color: #fff;
+  top: 102px;
+  z-index: 10;
+  border-radius: 2rem;
+  border: solid 4px var(--gray);
+  transition: 0.3s ease-in-out;
+}
+
+.index-how-to div:hover::before {
+  background-color: var(--mainColor);
+  border: solid 4px var(--mainColor);
+}
+
+.index-how-to div:hover::after {
+  background: var(--gray);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(235, 234, 235, 1) 0%,
+    rgba(189, 216, 192, 1) 50%,
+    rgba(235, 234, 235, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(235, 234, 235, 1) 0%,
+    rgba(189, 216, 192, 1) 50%,
+    rgba(235, 234, 235, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(235, 234, 235, 1) 0%,
+    rgba(189, 216, 192, 1) 50%,
+    rgba(235, 234, 235, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebeaeb",endColorstr="#ebeaeb",GradientType=1);
+  transition: 0.5s ease-in-out;
+
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+
+.index-how-to {
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
   :root {
-    --globalPadding: 4rem;
+    --globalPadding: 1rem;
   }
   header {
     flex-direction: column;
@@ -296,12 +570,12 @@ nav li a {
     height: calc(100% + 3px);
     content: "";
     display: block;
-    z-index: -1;
+    z-index: 21;
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0) 5%,
-      rgba(255, 255, 255, 1) 100%
+      rgba(#fff, #fff, #fff, 0) 0%,
+      rgba(#fff, #fff, #fff, 0) 5%,
+      rgba(#fff, #fff, #fff, 1) 100%
     );
   }
 
@@ -354,5 +628,95 @@ nav li a {
   .logo {
     width: 100px;
     margin-bottom: 1rem;
+  }
+
+  /* index styling */
+
+  .index-hero {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+  .index-hero div:first-of-type {
+    grid-column: initial;
+    grid-row: 1 /-1;
+  }
+  .index-hero div a {
+    justify-content: flex-end;
+    padding: 1.5rem;
+  }
+
+  .index-general-info {
+    padding: var(--globalPadding) 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-heading {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+  }
+
+  .main-heading + p {
+    max-width: 50%;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .section-padding {
+    padding: var(--globalPadding) 0;
+  }
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .main-heading + p {
+    max-width: 70%;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .section-padding {
+    padding: 2rem 4rem;
+  }
+
+  .main-heading:before {
+    content: "";
+    width: 6rem;
+    height: 8px;
+    border-radius: 3rem;
+    display: block;
+    position: absolute;
+    background-color: var(--mainColor);
+    top: -10px;
+  }
+  .index-products-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .index-hero div a h2 {
+    font-size: 1.7rem;
+  }
+  .index-hero div a p {
+    font-size: 1.2rem;
+  }
+  .main-heading + p {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .index-hero div a h2 {
+    font-size: 2.5rem;
+  }
+  .index-hero div a p {
+    font-size: 1.5rem;
+  }
+  .index-general-info {
+    padding: var(--globalPadding) 15rem;
+  }
+  .main-heading + p {
+    max-width: 35%;
   }
 }
