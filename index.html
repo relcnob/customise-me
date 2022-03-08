@@ -23,8 +23,8 @@
           <li>
             <a href="subpages/customise-soap.html">Customise your own!</a>
           </li>
-          <li>
-            <label>About</label>
+          <li class="dropdown">
+            <label id="about" class="collapsed">About</label>
             <ul>
               <li><a href="subpages/about.html">About us</a></li>
               <li><a href="subpages/faq.html">FAQ</a></li>
@@ -36,9 +36,11 @@
             </ul>
           </li>
           <li><a href="subpages/contact.html">Contact</a></li>
-          <ul>
-            <li id="account-icon">
-              <label>Account</label>
+          <ul class="header-ico">
+            <li class="dropdown">
+              <label id="account" class="collapsed"
+                ><img src="assets/icons/account_circle_white_24dp.svg"
+              /></label>
               <ul>
                 <li><a href="subpages/account-login.html">Login</a></li>
                 <li><a href="subpages/account-register.html">Register</a></li>
@@ -53,16 +55,55 @@
               </ul>
             </li>
             <li id="favourites-icon">
-              <a href="subpages/favourites.html">Favourites</a>
+              <a href="subpages/favourites.html"
+                ><img src="assets/icons/favorite_white_24dp.svg" /><span
+                  >Favourites</span
+                ></a
+              >
             </li>
-            <li id="cart-icon"><a href="subpages/cart.html">Cart</a></li>
+            <li id="cart-icon">
+              <a href="subpages/cart.html"
+                ><img src="assets/icons/shopping_cart_white_24dp.svg" /><span
+                  >Cart</span
+                ></a
+              >
+            </li>
           </ul>
         </ul>
       </nav>
     </header>
 
     <main></main>
-    <footer></footer>
+    <footer>
+      <section>
+        <h2>About</h2>
+        <p>About text goes here</p>
+      </section>
+      <nav>
+        <h2>Information</h2>
+        <ul>
+          <li><a href="subpages/about.html">About us</a></li>
+          <li><a href="subpages/faq.html">FAQ</a></li>
+          <li><a href="subpages/ingredients.html">Ingredients</a></li>
+          <li><a href="subpages/aromatherapy.html">Aromatherapy</a></li>
+          <li><a href="subpages/sustainability.html">Sustainability</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h2>Helpful links</h2>
+        <ul>
+          <li><a href="subpages/product-list.html">Store</a></li>
+          <li><a href="subpages/workshop.html">Workshops</a></li>
+          <li><a href="subpages/contact.html">Contact</a></li>
+          <li><a>Cookie & Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h2>Social media</h2>
+        <a href="#" target="_blank"><img src="" alt="facebook" /></a>
+        <a href="#" target="_blank"><img src="" alt="instagram" /></a>
+      </section>
+    </footer>
   </body>
   <script src="scripts/menu.js"></script>
 </html>
