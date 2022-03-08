@@ -47,7 +47,8 @@
   flex-direction: column;
   padding: 0.4rem;
   border-radius: 15px;
-  box-shadow: 3px 3px 1.5rem #cccbcc;
+  box-shadow: 3px 3px 1.5rem #a5a4a5;
+  transition: 0.3s ease-in-out;
 }
 
 .product-card a {
@@ -89,6 +90,7 @@
   align-items: center;
   margin: 0 auto;
   font-family: var(--headerFont);
+  width: 70%;
 }
 
 .product-card button:hover {
@@ -100,6 +102,11 @@
   background-color: var(--bgColor);
   color: var(--buttonActive);
   border-color: var(--buttonActive);
+}
+
+.product-card:hover {
+  transform: translate(-0.15rem, -0.3rem);
+  box-shadow: 3px 3px 2.5rem #a5a4a5;
 }
 
 .hidden {
