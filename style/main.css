@@ -10,7 +10,7 @@
   --bodyFont: "Open Sans", sans-serif;
   --headerFont: "Fredoka", sans-serif;
   --mainColor: #bdd8c0;
-  --subColor: #9dc5a1;
+  --subColor: #aa8b7a;
   --black: #282828;
   --gray: #ebeaeb;
   --lightGray: #f7f7f7;
@@ -234,7 +234,7 @@ nav li a {
   min-height: 10rem;
 }
 
-.index-hero div span {
+.index-hero div a {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -267,12 +267,21 @@ nav li a {
   z-index: 2;
 }
 
-.index-hero div span h2 {
+.index-hero div a h2 {
   color: #fff;
   margin-bottom: 0.3rem;
   font-size: 1.3rem;
+  transition: letter-spacing 0.3s ease-in-out, transform 0.3s ease,
+    text-shadow 0.3s ease-in-out;
+  text-shadow: 0px 0 var(--subColor);
 }
-.index-hero div span p {
+.index-hero div a:hover h2 {
+  letter-spacing: 4px;
+  transform: translateX(6px);
+  text-shadow: -4px 0px var(--subColor);
+}
+
+.index-hero div a p {
   color: #fff;
   margin-bottom: 0.3rem;
   font-size: 0.9rem;
@@ -484,25 +493,25 @@ nav li a {
     grid-column: initial;
     grid-row: 1 /-1;
   }
-  .index-hero div span {
+  .index-hero div a {
     justify-content: flex-end;
     padding: 1.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .index-hero div span h2 {
+  .index-hero div a h2 {
     font-size: 1.7rem;
   }
-  .index-hero div span p {
+  .index-hero div a p {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .index-hero div span h2 {
+  .index-hero div a h2 {
     font-size: 2.5rem;
   }
-  .index-hero div span p {
+  .index-hero div a p {
     font-size: 1.5rem;
   }
 }
