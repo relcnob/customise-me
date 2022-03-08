@@ -74,6 +74,49 @@ header {
   padding: 1rem var(--globalPadding);
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #fff;
+  background: var(--subColor);
+  padding: var(--globalPadding);
+}
+main {
+  padding: var(--globalPadding);
+}
+
+footer h2 {
+  color: #fff;
+}
+
+footer nav ul {
+  width: auto;
+  text-align: left;
+}
+
+footer nav ul li {
+  padding: 0.1rem;
+  padding-left: 0;
+}
+
+footer nav {
+  margin: 0.5rem 0;
+}
+
+footer section {
+  margin: 0.5rem 0;
+}
+
+footer nav ul li a {
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+footer nav ul li a:hover {
+  opacity: 0.5;
+}
+
 /* menu styling */
 
 #menu {
@@ -135,9 +178,12 @@ nav li a {
   width: 80px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   header {
     flex-direction: column;
+  }
+  footer {
+    grid-template-columns: repeat(4, 1fr);
   }
   nav {
     width: 100%;
