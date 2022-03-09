@@ -348,14 +348,26 @@ input[type="number"]::-webkit-outer-spin-button {
   .next-option {
     right: 6rem;
   }
+  .soap-container {
+    margin-top: 10rem;
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 860px) {
   .editor-ui {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+  .previous-option {
+    left: 1rem;
+  }
+  .next-option {
+    right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .checkout {
     width: 50%;
   }
