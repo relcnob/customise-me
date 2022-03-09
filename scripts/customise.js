@@ -33,10 +33,40 @@ document.querySelector("#color-" + activeShape).checked = true;
 checkMode(activeMode);
 document.querySelector("#shape-mode").addEventListener("click", function () {
   checkMode(1);
+  document.querySelector("#color-mode").classList.remove("active-mode");
+  document.querySelector("#shape-mode").classList.add("active-mode");
 });
 document.querySelector("#color-mode").addEventListener("click", function () {
   checkMode(2);
+  document.querySelector("#color-mode").classList.add("active-mode");
+  document.querySelector("#shape-mode").classList.remove("active-mode");
 });
+
+document
+  .querySelector(".option-wrapper h2+img")
+  .addEventListener("click", function () {
+    toggleModal();
+  });
+
+document
+  .querySelector(".option-wrapper:nth-of-type(2) h2+img")
+  .addEventListener("click", function () {
+    toggleModal();
+  });
+
+document
+  .querySelector(".option-wrapper:nth-of-type(3) h2+img")
+  .addEventListener("click", function () {
+    toggleModal();
+  });
+
+document.querySelector(".modal").addEventListener("click", function () {
+  toggleModal();
+});
+
+function toggleModal() {
+  document.querySelector("#head-note-desc").classList.toggle("show-modal");
+}
 
 function checkMode(x) {
   console.log(x);
@@ -186,4 +216,18 @@ function radioColor(x) {
     "editor-soap color-" + activeColor;
   document.querySelector("#current-option").textContent =
     "Current color: " + colors[x - 1];
+}
+
+document
+  .querySelector(".editor-ui div:last-of-type")
+  .addEventListener("click", function () {
+    checkPrices();
+  });
+
+function checkPrices() {
+  const prdPrice = document.querySelector("#product-price");
+  const optPrice = document.querySelector("#options-price");
+  const totPrice = document.querySelector("#total-price");
+
+  document;
 }

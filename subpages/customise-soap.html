@@ -71,7 +71,12 @@
         </ul>
       </nav>
     </header>
-
+    <section id="head-note-desc" class="modal">
+      <div class="modal-content"><img src="../assets/icons/close_white_24dp.svg">
+        <h1 class="main-heading">Head note</h1>
+        <p>Basically, each essential oil has a note, and that note helps determine how the oil will play with others. These notes can be separated into three categories: head, heart, and base. A head note is usually the first thing you`ll notice in a fragrance. They are usually fresh and uplifting and will also usually be the first to evaporate. Heart notes help give body and fullness to a blend. They`re often what holds the blend together and makes it work. Finally, we have base notes. It`s the foundation of your entire blend and will leave a lasting impression.</p>
+      </div>
+    </section>
     <main>
       <article class="editor-wrapper">
           <form class="editor-ui">
@@ -149,10 +154,10 @@
                 </label>
               </section>
             </div>
-            <div>
+            <div class="secondary-menu">
             <ul>
               <li>
-                <h2 id="shape-mode">Shape</h2>
+                <h2 id="shape-mode" class="active-mode">Shape</h2>
               </li>
             </ul>
             <ul>
@@ -161,7 +166,7 @@
               </li>
             </ul>
             <li class="option-wrapper">
-              <h2>Base note</h2>
+              <h2>Base note</h2><img src="../assets/icons/more-info.svg" class="more-info">
               <label class="radio-note">
                 <input type="radio" name="base-note" />
                 Cedarwood
@@ -174,7 +179,7 @@
               </label>
             </li>
             <li class="option-wrapper">
-              <h2>Head note</h2>
+              <h2>Head note</h2><img src="../assets/icons/more-info.svg" class="more-info">
               <label class="radio-note">
                 <input type="radio" name="head-note" value="bergamot" />
                 Bergamot
@@ -190,9 +195,14 @@
                 Rosemary
                 <img src="../assets/img/ingredients/rosemary.webp" />
               </label>
+              <label class="radio-note">
+                <input type="radio" name="head-note" value="none" />
+                None
+                <img src="../assets/icons/none.svg" />
+              </label>
             </li>
             <li class="option-wrapper">
-              <h2>Heart note</h2>
+              <h2>Heart note</h2><img src="../assets/icons/more-info.svg" class="more-info">
               <label class="radio-note">
                 <input type="radio" name="heart-note" value="cinnamon" />
                 Cinnamon
@@ -208,8 +218,30 @@
                 Lavender
                 <img src="../assets/img/ingredients/lavender.webp" />
               </label>
+              <label class="radio-note">
+                <input type="radio" name="heart-note" value="none" />
+                None
+                <img src="../assets/icons/none.svg" />
+              </label>
+              
             </li>
-            <section>
+            <section class="purchase-details">
+              <ul>
+                <li>
+                  <p>Product total:</p>
+                  <p id="product-price">123</p>
+                </li>
+                <li>
+                  <p>Options total:</p>
+                  <p id="options-price">123</p>
+                </li>
+                <li>
+                  <p>Grand total:</p>
+                  <p id="total-price">123</p>
+                </li>
+              </ul>
+            </section>
+            <section class="checkout">
               <input
                 type="number"
                 id="amount"
@@ -218,7 +250,7 @@
                 min="4"
                 value="4"
               />
-              <button type="submit" class="add-to-cart">Purchase</button>
+              <button type="submit" class="add-to-cart">Add to cart</button>
             </section>
           </div>
           </form>
