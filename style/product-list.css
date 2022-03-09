@@ -12,7 +12,9 @@
 .product-list-header {
   display: flex;
   justify-content: space-between;
-  margin: 0 0.6rem;
+}
+
+.product-list-header h2 {
 }
 
 .product-list-header h2::before {
@@ -26,14 +28,64 @@
   border-radius: 10px;
 }
 
-.filtering {
-  border: 1px solid black;
-  width: 5rem;
+.sorting {
+  display: flex;
+  flex-direction: row;
   text-align: center;
-  align-self: center;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
-.filteringDropdown {
+.sortingDropdown {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.3rem;
+  position: relative;
+}
+
+li span {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.sortingDrops {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  background-color: var(--mainColor);
+  color: var(--bgColor);
+  border-radius: 0 15px 15px 15px;
+  z-index: 1;
+}
+
+.sortingDrops li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.sortingDrops li:hover {
+  background-color: var(--bgColor);
+  color: var(--mainColor);
+}
+
+.product-filters ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product-filters li {
+  background-color: var(--mainColor);
+  color: var(--bgColor);
+  border: 2px solid var(--mainColor);
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 0.5rem 1.3rem;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .product-list {
@@ -47,7 +99,13 @@
   flex-direction: column;
   padding: 0.4rem;
   border-radius: 15px;
-  box-shadow: 3px 3px 1.5rem #cccbcc;
+  box-shadow: 3px 3px 1.5rem #a5a4a5;
+  transition: 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translate(-0.15rem, -0.3rem);
+  box-shadow: 3px 3px 2.5rem #a5a4a5;
 }
 
 .product-card a {
@@ -89,6 +147,7 @@
   align-items: center;
   margin: 0 auto;
   font-family: var(--headerFont);
+  width: 70%;
 }
 
 .product-card button:hover {

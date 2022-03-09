@@ -19,3 +19,24 @@ function showMenu() {
 function collapseDropdown() {
   this.classList.toggle("collapsed");
 }
+
+
+function showSorting() {
+    document.querySelector(".sortingDropdown").classList.toggle("hidden");
+
+}
+
+function showColour() {
+    document.querySelector(".colourDrop").classList.toggle("hidden");
+
+}
+
+function showShape() {
+    document.querySelector(".shapeDrop").classList.toggle("hidden");
+
+}
+
+function showPrice() {
+    document.querySelector(".priceDrop").classList.toggle("hidden");
+
+}
