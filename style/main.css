@@ -150,11 +150,13 @@ footer nav ul li a:hover {
 }
 
 .showMenu #menu {
+  position: fixed;
   transform: translateX(0%);
   opacity: 1;
   visibility: visible;
   width: 100%;
   transition: all 0.6s ease 0s, width 0s ease 0s;
+  z-index: 2;
 }
 
 .showMenu .menu-icon {
@@ -426,7 +428,7 @@ nav li a {
   position: absolute;
   background-color: #fff;
   top: 78px;
-  z-index: 10;
+  z-index: 1;
   border-radius: 2rem;
   border: solid 4px var(--gray);
   transition: 0.3s ease-in-out;
@@ -500,9 +502,11 @@ nav li a {
 }
 
 .event-card div {
-  padding: 1.5rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .event-card h2:before {
