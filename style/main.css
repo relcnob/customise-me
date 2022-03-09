@@ -119,6 +119,28 @@ footer nav ul li a:hover {
   opacity: 0.5;
 }
 
+footer .social {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .social section {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .social a img {
+  width: 48px;
+  transition: 0.5s ease-in-out;
+}
+
+footer .social a img:hover {
+  opacity: 0.5;
+}
+
+footer .about p {
+  margin-bottom: 0.6rem;
+}
 /* menu styling */
 
 #menu {
