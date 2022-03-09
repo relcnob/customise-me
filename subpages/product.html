@@ -5,13 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,nofollow" />
     <title>CustomiseMe - Product</title>
-    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="../style/product-page.css">
+    <link rel="stylesheet" href="../style/main.css"> 
     <link rel="icon" type="image/x-icon" href="img/icons/favicon.svg" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <a href="../index.html" class="logo"
+        ><img
+          src="../assets/icons/customiseme-logo-white.svg"
+          alt="CustomiseMe logo"
+      /></a>
+      <nav>
+        <img
+          src="../assets/icons/menu_white_24dp.svg"
+          class="menu-icon"
+          alt=""
+        />
+        <ul id="menu">
+          <li><a href="product-list.html">Store</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li>
+            <a href="customise-soap.html">Customise your own!</a>
+          </li>
+          <li>
+            <label>About</label>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="ingredients.html">Ingredients</a></li>
+              <li><a href="aromatherapy.html">Aromatherapy</a></li>
+              <li>
+                <a href="sustainability.html">Sustainability</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <ul>
+            <li id="account-icon">
+              <label>Account</label>
+              <ul>
+                <li><a href="account-login.html">Login</a></li>
+                <li><a href="account-register.html">Register</a></li>
+                <li>
+                  <a href="account-account-details.html">Account details</a>
+                </li>
+                <li>
+                  <a href="account-track-order.html">Order tracking</a>
+                </li>
+              </ul>
+            </li>
+            <li id="favourites-icon">
+              <a href="favourites.html">Favourites</a>
+            </li>
+            <li id="cart-icon"><a href="cart.html">Cart</a></li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
 
-    <main></main>
-    <footer></footer>
+    <main>
+     <div class="product">
+       <img src="../assets/temporary-images/test-soap.png" alt="soap"/>
+       <div class="product-card">
+         <h2>Calming soap</h2>
+         <p><strong> Ingredients|</strong>
+            Coconut oil* (Cocos Nucifera oil), Olive oil* (Olea Europaea oil), Shea butter* (Butyrospermum Parkii), Distilled water.
+           Essential oils: Lavender (Lavandula Angustifolia)* and Sandalwood (Amyris Balsamifera)*
+            <br>*Certified Organic product
+            <br><strong> Color |</strong> Yellow and Blue. INCI CI 77492, CI 77019, CI 77891, CI 77288, CI 77007
+            <br><strong>Weight |</strong> approx. 87gr</p>
+         <p><strong>Made with |</strong> Plant-based oils and kinds of butter
+           <br><strong>Handmade |</strong> in Denmark
+           <br><strong>Packaging |</strong> Eco-friendly up-cycled re-used</p>
+         <div class="availability">
+           <p><strong> Availability | </strong><span>In stock</span></p>
+         </div>
+       </div>
+      </div>
+
+    <h2>You might also like</h2>
+
+    </main>
+
+    <footer>
+      <section>
+        <h2>About</h2>
+        <p>About text goes here</p>
+      </section>
+      <nav>
+        <h2>Information</h2>
+        <ul>
+          <li><a href="subpages/about.html">About us</a></li>
+          <li><a href="subpages/faq.html">FAQ</a></li>
+          <li><a href="subpages/ingredients.html">Ingredients</a></li>
+          <li><a href="subpages/aromatherapy.html">Aromatherapy</a></li>
+          <li><a href="subpages/sustainability.html">Sustainability</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h2>Helpful links</h2>
+        <ul>
+          <li><a href="subpages/product-list.html">Store</a></li>
+          <li><a href="subpages/workshop.html">Workshops</a></li>
+          <li><a href="subpages/contact.html">Contact</a></li>
+          <li><a>Cookie & Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h2>Social media</h2>
+        <a href="#" target="_blank"><img src="" alt="facebook" /></a>
+        <a href="#" target="_blank"><img src="" alt="instagram" /></a>
+      </section>
+    </footer>
+    <script src="../scripts/subpages-menu.js"></script>
   </body>
 </html>

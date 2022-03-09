@@ -1,0 +1,38 @@
+html{
+ overflow-y: scroll;
+}
+
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    margin-top: 13px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 1.5rem #cccbcc;
+}
+
+p{
+    line-break: strict;
+    line-height: 28px;
+}
+
+span{
+    color: var(--subColor);
+}
+  
+.availability{
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+    .availability{
+        flex-direction: row;
+    }
+
+    #menu{
+        max-height: 100px;
+    }
+}
