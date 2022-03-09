@@ -219,15 +219,86 @@ function radioColor(x) {
 }
 
 document
-  .querySelector(".editor-ui div:last-of-type")
+  .querySelector(".secondary-menu")
   .addEventListener("click", function () {
     checkPrices();
   });
+
+document
+  .querySelector(".options-shapes")
+  .addEventListener("click", function () {
+    checkPrices();
+  });
+
+document
+  .querySelector(".options-colors")
+  .addEventListener("click", function () {
+    checkPrices();
+  });
+
+document
+  .querySelector(".previous-option")
+  .addEventListener("click", function () {
+    checkPrices();
+  });
+document.querySelector(".next-option").addEventListener("click", function () {
+  checkPrices();
+});
 
 function checkPrices() {
   const prdPrice = document.querySelector("#product-price");
   const optPrice = document.querySelector("#options-price");
   const totPrice = document.querySelector("#total-price");
+  const amount = document.querySelector("#amount");
+  const shape = document.querySelector(`input[name=shape]:checked`);
+  const color = document.querySelector(`input[name=color]:checked`);
+  const baseNote = document.querySelector(`input[name=base-note]:checked`);
+  const headNote = document.querySelector(`input[name=head-note]:checked`);
+  const heartNote = document.querySelector(`input[name=heart-note]:checked`);
 
-  document;
+  prdPrice.textContent = 55 * amount.value + " DKK";
+
+  optionalPrice();
+
+  function optionalPrice() {
+    let shapePrice;
+    let colorPrice;
+    let baseNotePrice;
+    let headNotePrice;
+    let heartNotePrice;
+    let optionalPrice;
+
+    console.log(baseNote.value);
+
+    if (shape.value == "random") {
+      shapePrice = 0;
+    } else {
+      shapePrice = 5;
+    }
+    if (color.value == "no_color") {
+      colorPrice = 0;
+    } else {
+      colorPrice = 5;
+    }
+    if (baseNote.value == "none") {
+      baseNotePrice = 0;
+    } else {
+      baseNotePrice = 10;
+    }
+    if (headNote.value == "none") {
+      headNotePrice = 0;
+    } else {
+      headNotePrice = 10;
+    }
+    if (heartNote.value == "none") {
+      heartNotePrice = 0;
+    } else {
+      heartNotePrice = 10;
+    }
+    optionalPrice =
+      shapePrice + colorPrice + baseNotePrice + headNotePrice + heartNotePrice;
+
+    optPrice.textContent = optionalPrice + " DKK";
+    totPrice.textContent = optionalPrice + 55 * amount.value + " DKK";
+  }
 }

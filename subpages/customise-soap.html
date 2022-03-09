@@ -150,7 +150,6 @@
                 </label>
                 <label class="radio-wrapper">
                   <input type="radio" name="color" value="no_color" id="color-10"/>
-                  
                 </label>
               </section>
             </div>
@@ -168,7 +167,7 @@
             <li class="option-wrapper">
               <h2>Base note</h2><img src="../assets/icons/more-info.svg" class="more-info">
               <label class="radio-note">
-                <input type="radio" name="base-note" />
+                <input type="radio" name="base-note" checked/>
                 Cedarwood
                 <img src="../assets/img/ingredients/Cedarwood.webp" />
               </label>
@@ -176,6 +175,11 @@
                 <input type="radio" name="base-note" />
                 Sandalwood
                 <img src="../assets/img/ingredients/sandalwood.webp" />
+              </label>
+              <label class="radio-note">
+                <input type="radio" name="base-note" value="none" checked/>
+                None
+                <img src="../assets/icons/none.svg" id="no-base-note"/>
               </label>
             </li>
             <li class="option-wrapper">
@@ -196,9 +200,9 @@
                 <img src="../assets/img/ingredients/rosemary.webp" />
               </label>
               <label class="radio-note">
-                <input type="radio" name="head-note" value="none" />
+                <input type="radio" name="head-note" value="none" checked/>
                 None
-                <img src="../assets/icons/none.svg" />
+                <img src="../assets/icons/none.svg" id="no-head-note"/>
               </label>
             </li>
             <li class="option-wrapper">
@@ -219,7 +223,7 @@
                 <img src="../assets/img/ingredients/lavender.webp" />
               </label>
               <label class="radio-note">
-                <input type="radio" name="heart-note" value="none" />
+                <input type="radio" name="heart-note" value="none" checked id="no-heart-note"/>
                 None
                 <img src="../assets/icons/none.svg" />
               </label>
@@ -229,15 +233,15 @@
               <ul>
                 <li>
                   <p>Product total:</p>
-                  <p id="product-price">123</p>
+                  <p id="product-price">220 DKK</p>
                 </li>
                 <li>
                   <p>Options total:</p>
-                  <p id="options-price">123</p>
+                  <p id="options-price">0 DKK</p>
                 </li>
                 <li>
                   <p>Grand total:</p>
-                  <p id="total-price">123</p>
+                  <p id="total-price">220 DKK</p>
                 </li>
               </ul>
             </section>
