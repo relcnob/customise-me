@@ -5,13 +5,269 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,nofollow" />
     <title>CustomiseMe - Custom soap</title>
-    <link rel="stylesheet" href="style/main.css" />
-    <link rel="icon" type="image/x-icon" href="img/icons/favicon.svg" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/customise.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.svg" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <a href="../index.html" class="logo"
+        ><img
+          src="../assets/icons/customiseme-logo-white.svg"
+          alt="CustomiseMe logo"
+      /></a>
+      <nav>
+        <img src="../assets/icons/menu_white_24dp.svg" class="menu-icon" />
+        <ul id="menu">
+          <li><a href="product-list.html">Store</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li>
+            <a href="customise-soap.html">Customise your own!</a>
+          </li>
+          <li class="dropdown">
+            <label id="about" class="collapsed">About</label>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="ingredients.html">Ingredients</a></li>
+              <li><a href="aromatherapy.html">Aromatherapy</a></li>
+              <li>
+                <a href="sustainability.html">Sustainability</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <ul class="header-ico">
+            <li class="dropdown">
+              <label id="account" class="collapsed"
+                ><img src="../assets/icons/account_circle_white_24dp.svg"
+              /></label>
+              <ul>
+                <li><a href="account-login.html">Login</a></li>
+                <li><a href="account-register.html">Register</a></li>
+                <li>
+                  <a href="account-account-details.html">Account details</a>
+                </li>
+                <li>
+                  <a href="account-track-order.html">Order tracking</a>
+                </li>
+              </ul>
+            </li>
+            <li id="favourites-icon">
+              <a href="favourites.html"
+                ><img src="../assets/icons/favorite_white_24dp.svg" /><span
+                  >Favourites</span
+                ></a
+              >
+            </li>
+            <li id="cart-icon">
+              <a href="cart.html"
+                ><img src="../assets/icons/shopping_cart_white_24dp.svg" /><span
+                  >Cart</span
+                ></a
+              >
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
 
-    <main></main>
-    <footer></footer>
+    <main>
+      <article class="editor-wrapper">
+          <form class="editor-ui">
+            <div class="editor-options">
+              <h1 id="active-mode" class="main-heading">Shape</h1>
+              <p id="current-option">Current shape: Heart</p>
+              <div class="soap-container">
+                <img src="../assets/customise/shape-1.svg" class="editor-soap color-1">
+                <div class="previous-option"></div>
+                <div class="next-option"></div>
+              </div>
+              <section class="options-shapes">
+                <label class="radio-wrapper">
+                  <input type="radio" name="shape" value="square" id="shape-1"/>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="shape" value="rectangle" id="shape-2"/>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="shape" value="round" id="shape-3"/>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="shape" value="square" id="shape-4"/>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="shape" value="star" id="shape-5"/>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="shape" value="oval" id="shape-6"/>
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="shape" value="random" id="shape-7"/>
+                </label>
+              </section>
+              <section class="options-colors">
+                <label class="radio-wrapper">
+                  <input type="radio" name="color" value="arctic_white" id="color-1"/>
+                  
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="color" value="black" id="color-2"/>
+                  
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="color" value="candy_pink" id="color-3"/>
+                  
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="color" value="light_blue" id="color-4"/>
+                  
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="color" value="passion_purple" id="color-5"/>
+                  
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="color" value="orange" id="color-6"/>
+                  
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="color" value="iron_red" id="color-7"/>
+                 
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="color" value="ultramarine_blue" id="color-8"/>
+                 
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="color" value="yellow" id="color-9"/>
+                  
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" name="color" value="no_color" id="color-10"/>
+                  
+                </label>
+              </section>
+            </div>
+            <div>
+            <ul>
+              <li>
+                <h2 id="shape-mode">Shape</h2>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <h2 id="color-mode">Color</h2>
+              </li>
+            </ul>
+            <li class="option-wrapper">
+              <h2>Base note</h2>
+              <label class="radio-note">
+                <input type="radio" name="base-note" />
+                Cedarwood
+                <img src="../assets/img/ingredients/Cedarwood.webp" />
+              </label>
+              <label class="radio-note">
+                <input type="radio" name="base-note" />
+                Sandalwood
+                <img src="../assets/img/ingredients/sandalwood.webp" />
+              </label>
+            </li>
+            <li class="option-wrapper">
+              <h2>Head note</h2>
+              <label class="radio-note">
+                <input type="radio" name="head-note" value="bergamot" />
+                Bergamot
+                <img src="../assets/img/ingredients/bergamot.webp" />
+              </label>
+              <label class="radio-note">
+                <input type="radio" name="head-note" value="orange" />
+                Orange
+                <img src="../assets/img/ingredients/orange.webp" />
+              </label>
+              <label class="radio-note">
+                <input type="radio" name="head-note" value="rosemary" />
+                Rosemary
+                <img src="../assets/img/ingredients/rosemary.webp" />
+              </label>
+            </li>
+            <li class="option-wrapper">
+              <h2>Heart note</h2>
+              <label class="radio-note">
+                <input type="radio" name="heart-note" value="cinnamon" />
+                Cinnamon
+                <img src="../assets/img/ingredients/cinnamon.webp" />
+              </label>
+              <label class="radio-note">
+                <input type="radio" name="heart-note" value="ginger" />
+                Ginger
+                <img src="../assets/img/ingredients/ginger.webp" />
+              </label>
+              <label class="radio-note">
+                <input type="radio" name="heart-note" value="lavender" />
+                Lavender
+                <img src="../assets/img/ingredients/lavender.webp" />
+              </label>
+            </li>
+            <section>
+              <input
+                type="number"
+                id="amount"
+                name="amount"
+                step="1"
+                min="4"
+                value="4"
+              />
+              <button type="submit" class="add-to-cart">Purchase</button>
+            </section>
+          </div>
+          </form>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <section class="about">
+        <h2>About</h2>
+        <p>Co-creating with your requests, <br />needs and wishes in mind.</p>
+        <p>CustomiseMe ApS</p>
+        <p>
+          Falen 21D, 2TV 5000 Odense C<br />
+          info@customiseme.dk
+        </p>
+        <p>CVR: 42657603</p>
+      </section>
+      <nav>
+        <h2>Information</h2>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="ingredients.html">Ingredients</a></li>
+          <li><a href="aromatherapy.html">Aromatherapy</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h2>Helpful links</h2>
+        <ul>
+          <li><a href="product-list.html">Store</a></li>
+          <li><a href="workshop.html">Workshops</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a>Cookie & Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <section class="social">
+        <h2>Social media</h2>
+        <section>
+          <a href="https://www.facebook.com/customisemedk/" target="_blank"
+            ><img src="../assets/icons/facebook.svg" alt="facebook"
+          /></a>
+          <a href="https://www.instagram.com/customisemedk/" target="_blank"
+            ><img src="../assets/icons/instagram.svg" alt="instagram"
+          /></a>
+        </section>
+      </section>
+    </footer>
   </body>
+  <script src="../scripts/subpages-menu.js"></script>
+  <script src="../scripts/customise.js"></script>
 </html>
