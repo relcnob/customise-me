@@ -83,18 +83,51 @@
     <main>
       <div class="product-list-header">
         <h2>Store</h2>
-        <div class="filtering">
-          Sorting
-          <ul class="filteringDropdown hidden">
-            <li onclick="">Price: low-high</li>
-            <li onclick="">Price: high-low</li>
-            <li onclick="">test</li>
-            <li onclick="">test2</li>
-            <li onclick="">test3</li>
-          </ul>
+        <div onclick="showSorting()" class="sorting">
+          <span>Sort and Filtering</span>
+          <img src="../assets/icons/sort_black_24dp.svg" alt="" />
         </div>
       </div>
+      <ul class="sortingDropdown hidden">
+        <li onclick="" class="">
+          <span onclick="showColour()"
+            >Colour
+            <img src="../assets/icons/expand_more_black_24dp.svg" alt=""
+          /></span>
+          <ul class="sortingDrops colourDrop hidden">
+            <li onclick="">Ultramarine Blue</li>
+            <li onclick="">Candy Pink</li>
+            <li onclick="">Light Blue</li>
+            <li onclick="">Purple Passion</li>
+            <li onclick="">Red Iron</li>
+            <li onclick="">Yellow</li>
+          </ul>
+        </li>
 
+        <li onclick="">
+          <span onclick="showShape()"
+            >Shape <img src="../assets/icons/expand_more_black_24dp.svg" alt=""
+          /></span>
+          <ul class="sortingDrops shapeDrop hidden">
+            <li onclick="">Heart</li>
+            <li onclick="">Rectangular</li>
+            <li onclick="">Round</li>
+            <li onclick="">Square</li>
+            <li onclick="">Star</li>
+            <li onclick="">Oval</li>
+          </ul>
+        </li>
+
+        <li onclick="">
+          <span onclick="showPrice()"
+            >Price <img src="../assets/icons/expand_more_black_24dp.svg" alt=""
+          /></span>
+          <ul class="sortingDrops priceDrop hidden">
+            <li onclick="">Low - high</li>
+            <li onclick="">High - low</li>
+          </ul>
+        </li>
+      </ul>
       <section class="product-list">
         <div class="product-card">
           <a href="#">
