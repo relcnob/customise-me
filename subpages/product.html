@@ -41,9 +41,11 @@
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
-          <ul>
-            <li id="account-icon">
-              <label>Account</label>
+          <ul class="header-ico">
+            <li class="dropdown">
+              <label id="account" class="collapsed"
+                ><img src="../assets/icons/account_circle_white_24dp.svg"
+              /></label>
               <ul>
                 <li><a href="account-login.html">Login</a></li>
                 <li><a href="account-register.html">Register</a></li>
@@ -54,11 +56,20 @@
                   <a href="account-track-order.html">Order tracking</a>
                 </li>
               </ul>
-            </li>
-            <li id="favourites-icon">
-              <a href="favourites.html">Favourites</a>
-            </li>
-            <li id="cart-icon"><a href="cart.html">Cart</a></li>
+              <li id="favourites-icon">
+                <a href="subpages/favourites.html"
+                  ><img src="../assets/icons/favorite_white_24dp.svg" /><span
+                    >Favourites</span
+                  ></a
+                >
+              </li>
+              <li id="cart-icon">
+                <a href="subpages/cart.html"
+                  ><img src="../assets/icons/shopping_cart_white_24dp.svg" /><span
+                    >Cart</span
+                  ></a
+                >
+              </li>
           </ul>
         </ul>
       </nav>
@@ -81,7 +92,7 @@
          <div class="availability">
            <p><strong> Availability | </strong><span>In stock</span></p>
          </div>
-         <div class="product-price">
+         <div class="product-price" id=product-price>
           <h3>55,00 DKK</h3>
          </div>
         <div class="buy">

@@ -36,7 +36,6 @@ h3{
     border-radius: 10px;
   }
 
-
 p{
     line-break: strict;
     line-height: 28px;
@@ -101,14 +100,20 @@ button:hover{
     align-self: center;
   }
 
+  .product button{
+      margin-top: 15px;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
 @media screen and (min-width: 768px){
     .availability{
         flex-direction: row;
     }
 
-    #menu{
-        max-height: 60px;
-    }
+
 
     h2{
         margin-top: 12px;
@@ -151,4 +156,6 @@ button:hover{
     .product-price{
         margin: 4 auto -10 504; 
     }
+
+    
 }
