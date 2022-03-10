@@ -85,6 +85,22 @@ button:hover{
     color: var(--mainColor);
 }
 
+.buy{
+    display: flex;
+    flex-direction: column;
+}
+
+#amount {
+    padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+    width: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    border: solid 1px var(--gray);
+    border-radius: 0.4rem;
+    color: var(--black);
+    align-self: center;
+  }
+
 @media screen and (min-width: 768px){
     .availability{
         flex-direction: row;
@@ -112,6 +128,10 @@ button:hover{
         margin: auto;
     }
 
+    .buy{
+       flex-direction: row;
+    }
+
     .recommendations h2{
         margin-top: 93px;
         text-align: left;
@@ -125,10 +145,10 @@ button:hover{
     }
 
     .product button{
-        margin: 4 auto 4 544; 
+        margin: 4 auto 4 444; 
     }
 
     .product-price{
-        margin: 4 auto -10 554; 
+        margin: 4 auto -10 504; 
     }
 }
