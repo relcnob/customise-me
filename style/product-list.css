@@ -2,7 +2,7 @@
   --bodyFont: "Open Sans", sans-serif;
   --headerFont: "Fredoka", sans-serif;
   --mainColor: #bdd8c0;
-  --subColor: #9dc5a1;
+  --subColor: #8c746d;
   --black: #282828;
   --gray: #ebeaeb;
   --bgColor: #fff;
@@ -12,9 +12,6 @@
 .product-list-header {
   display: flex;
   justify-content: space-between;
-}
-
-.product-list-header h2 {
 }
 
 .product-list-header h2::before {
@@ -92,6 +89,7 @@ li span {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .product-card {
@@ -148,6 +146,7 @@ li span {
   margin: 0 auto;
   font-family: var(--headerFont);
   width: 70%;
+  transition: 0.3s ease-in-out;
 }
 
 .product-card button:hover {
