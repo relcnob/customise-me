@@ -98,6 +98,50 @@ main span {
   margin: 1rem 0;
 }
 
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem;
+  border-radius: 15px;
+  box-shadow: 3px 3px 1.5rem #a5a4a5;
+  transition: 0.3s ease-in-out;
+  background: #fff;
+}
+
+.product-card:hover {
+  transform: translate(-0.15rem, -0.3rem);
+  box-shadow: 3px 3px 2.5rem #a5a4a5;
+}
+
+.product-card a {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.product-card h3 {
+  margin: 1rem auto;
+  position: relative;
+  margin-bottom: 0.3rem;
+}
+
+.product-card h3::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+  background-color: var(--mainColor);
+  border-radius: 10px;
+}
+
+.product-card-price {
+  font-size: 0.8rem;
+  color: var(--black);
+  margin: 0 auto;
+}
+
 .product-checkout input {
   font-size: 1.4rem;
   width: 2.5em;
@@ -150,6 +194,18 @@ button {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .product {
@@ -189,6 +245,11 @@ button {
     gap: 2rem;
     padding: 2rem;
     width: 100%;
+  }
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
   }
 }
 
