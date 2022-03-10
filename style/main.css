@@ -237,13 +237,13 @@ nav li a {
 }
 
 .index-hero div:nth-child(2) {
-  background-image: url(../assets/img/soap-2.jpg);
+  background-image: url(../assets/img/soap/calming.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .index-hero div:nth-child(3) {
-  background-image: url(../assets/img/soap-3.jpg);
+  background-image: url(../assets/img/soap/christmas.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -568,8 +568,27 @@ nav li a {
 .event-card button:hover a {
   color: var(--mainColor);
 }
-.event-bg {
+.event-bg-1 {
+  background: url(../assets/img/soap-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-bg-2 {
+  background: url(../assets/img/soap-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.event-bg-3 {
   background: url(../assets/img/soap-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.event-bg-4 {
+  background: url(../assets/img/soap-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
