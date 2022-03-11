@@ -776,8 +776,9 @@ nav li a {
     grid-row: 1 /-1;
   }
   .index-hero div a {
-    justify-content: flex-end;
-    padding: 1.5rem;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    display: flex;
   }
 
   .index-general-info {
